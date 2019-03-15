@@ -7,17 +7,44 @@
     android:layout_height="match_parent"
     tools:context=".PrayerGuidance$PlaceholderFragment">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/pgzuharbtn1"
+        android:layout_width="271dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp"
+        android:text="@string/pgzuharbtn1"
+        android:textColor="#894716"/>
+
+    <Button
+        android:id="@+id/pgzuharbtn2"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/pgzuharbtn2"
+        android:textColor="#894716"/>
+
+    <Button
+        android:id="@+id/pgzuharbtn3"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp"
+        android:text="@string/pgzuharbtn3"
+        android:textColor="#894716"/>
+
+    <Button
+        android:id="@+id/pgzuharbtn4"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/pgzuharbtn4"
+        android:textColor="#894716"/>
 
 </android.support.constraint.ConstraintLayout>

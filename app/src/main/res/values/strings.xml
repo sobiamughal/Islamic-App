@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Counter</string>
+    <string name="app_name">Daar-ul-Jannah</string>
     <string name="title_activity_prayer_guidance">PrayerGuidance</string>
     <string name="tab_text_1">Fajr</string>
     <string name="tab_text_2">Zuhar</string>
@@ -10,8 +10,15 @@
     <string name="section_format">Hello World from section: %1$d</string>
 
     <!--Prayer Guidance Fajr Activity Button Name -->
+    <!--Fajr-->
     <string name="pgfajrbtn1">2 Rakkat Sunnah \n Empahasized or Mu-akkdah</string>
     <string name="pgfajrbtn2">2 Rakkat Fard \n Mandatory</string>
+    <!--Zuhar-->
+    <string name="pgzuharbtn1">4 Rakkat Sunnah \n Empahasized or Mu-akkdah</string>
+    <string name="pgzuharbtn2">4 Rakkat Fard \n Mandatory</string>
+    <string name="pgzuharbtn3">2 Rakkat Sunnah \n Empahasized or Mu-akkdah</string>
+    <string name="pgzuharbtn4">2 Rakkat Nafil \n Mustahab</string>
+
 
     <!--Google Maps Working-->
     <string name="google_maps_API_key">AIzaSyCz4UCmnlDyHo_H_aOAF7yMrCuf0gNghdw</string>
