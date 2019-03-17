@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrayerGuidance$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/pgishabtn1"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="81dp"
+                android:text="@string/pgishabtn1"
+                android:textColor="#894716"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="98dp" />
+
+            <Button
+                android:id="@+id/pgishabtn2"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="@string/pgishabtn2"
+                android:textColor="#894716"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="175dp" />
+
+            <Button
+                android:id="@+id/pgishabtn3"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="@string/pgishabtn3"
+                android:textColor="#894716"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="261dp" />
+
+            <Button
+                android:id="@+id/pgishabtn4"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="@string/pgishabtn4"
+                android:textColor="#894716"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="348dp" />
+
+            <Button
+                android:id="@+id/pgishabtn5"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="@string/pgishabtn5"
+                android:textColor="#894716"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="348dp" />
+
+            <Button
+                android:id="@+id/pgishabtn6"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="@string/pgishabtn6"
+                android:textColor="#894716"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="348dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

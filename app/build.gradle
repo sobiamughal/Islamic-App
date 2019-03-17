@@ -46,4 +46,7 @@ dependencies {
 
     //google play service for maps
     implementation 'com.google.android.gms:play-services:11.0.0'
+
+    //library for prayer time
+    implementation 'com.android.volley:volley:1.1.1'
 }

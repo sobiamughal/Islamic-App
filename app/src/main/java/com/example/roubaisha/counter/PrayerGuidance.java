@@ -110,9 +110,30 @@ public class PrayerGuidance extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_prayer_guidance, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+            View rootView = null;
+            switch(getArguments().getInt(ARG_SECTION_NUMBER)){
+                case 1:
+                    //do something
+                    rootView = inflater.inflate(R.layout.fragment_prayer_guidance_fajr, container, false);
+                    break;
+                case 2:
+                    //load another page
+                    rootView = inflater.inflate(R.layout.fragment_prayer_guidance_zuhar, container, false);
+                    break;
+                case 3:
+                    //load another page
+                    rootView = inflater.inflate(R.layout.fragment_prayer_guidance_asr, container, false);
+                    break;
+                case 4:
+                    //load another page
+                    rootView = inflater.inflate(R.layout.fragment_prayer_guidance_maghrib, container, false);
+                    break;
+                case 5:
+                    //load another page
+                    rootView = inflater.inflate(R.layout.fragment_prayer_guidance_isha, container, false);
+                    break;
+            }
+
             return rootView;
         }
     }
@@ -129,25 +150,8 @@ public class PrayerGuidance extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            Fragment fragment = null;
-            switch (position){
-                case 0:
-                    fragment=new PrayerGuidance_Fajr();
-                    break;
-                case 1:
-                    fragment=new PrayerGuidance_Zuhar();
-                    break;
-                case 2:
-                    fragment=new PrayerGuidance_Asr();
-                    break;
-                case 3:
-                    fragment=new PrayerGuidance_Maghrib();
-                    break;
 
-                    default:
-                        return null;
-            }
-            return fragment;
+            return PlaceholderFragment.newInstance(position + 1);
         }
 
         @Override

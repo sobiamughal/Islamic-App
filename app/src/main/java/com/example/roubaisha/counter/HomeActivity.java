@@ -7,6 +7,9 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -18,7 +21,29 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Thread t = new Thread(){
+            @Override
+            public void run(){
+                try {
+                    while (!isInterrupted()){
+                        Thread.sleep(1000);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                TextView tdate = (TextView) findViewById(R.id.circle_text_Time);
+                                long date = System.currentTimeMillis();
+                                SimpleDateFormat sdf = new SimpleDateFormat("MMM dd yyyy\n hh:mm:ss a");
+                                String dateString = sdf.format(date);
+                                tdate.setText(dateString);
+                            }
+                        });
+                    }
+                }catch (InterruptedException e){
 
+                }
+            }
+        };
+        t.start();
 
         bottomNavigationView=(BottomNavigationView)findViewById(R.id.bottomNavView_Bar);
 

@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.roubaisha.counter.prayertime.PrayerTimeActivity;
+
 public class MoreActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
 
@@ -19,6 +21,7 @@ public class MoreActivity extends AppCompatActivity {
     private CardView prayergbtn;
     private CardView tasbihbtn;
     private CardView nearestmosquebtn;
+    private CardView prayertimebtn;
 
 
     @Override
@@ -52,6 +55,13 @@ public class MoreActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openNearestMosqueActivity();
+            }
+        });
+        prayertimebtn=(CardView)findViewById(R.id.prayertimebtn);
+        prayertimebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPrayerTimeActivity();
             }
         });
 
@@ -107,6 +117,10 @@ public class MoreActivity extends AppCompatActivity {
     }
     public void openNearestMosqueActivity(){
         Intent intent = new Intent(this, NearestMosque.class);
+        startActivity(intent);
+    }
+    public void openPrayerTimeActivity(){
+        Intent intent = new Intent(this, PrayerTimeActivity.class);
         startActivity(intent);
     }
 }

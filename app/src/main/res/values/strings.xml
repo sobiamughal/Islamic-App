@@ -18,6 +18,19 @@
     <string name="pgzuharbtn2">4 Rakkat Fard \n Mandatory</string>
     <string name="pgzuharbtn3">2 Rakkat Sunnah \n Empahasized or Mu-akkdah</string>
     <string name="pgzuharbtn4">2 Rakkat Nafil \n Mustahab</string>
+    <!--Asr-->
+    <string name="pgasrbtn1">4 Rakkat Fard \n Mandatory</string>
+    <!--Maghrib-->
+    <string name="pgmaghribbtn1">3 Rakkat Fard \n Mandatory</string>
+    <string name="pgmaghribbtn2">2 Rakkat Sunnah \n Empahasized or Mu-akkdah</string>
+    <string name="pgmaghribbtn3">2 Rakkat Nafil \n Mustahab</string>
+    <!--Isha-->
+    <string name="pgishabtn1">4 Rakkat Sunnah \n Empahasized or Mu-akkdah</string>
+    <string name="pgishabtn2">4 Rakkat Fard \n Mandatory</string>
+    <string name="pgishabtn3">2 Rakkat Sunnah \n Empahasized or Mu-akkdah</string>
+    <string name="pgishabtn4">2 Rakkat Nafil \n Mustahab</string>
+    <string name="pgishabtn5">3 Rakkat Witr \n Wajib</string>
+    <string name="pgishabtn6">2 Rakkat Nafil \n Mustahab</string>
 
 
     <!--Google Maps Working-->
