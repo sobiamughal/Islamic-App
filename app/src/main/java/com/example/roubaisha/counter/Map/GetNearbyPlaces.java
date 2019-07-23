@@ -2,6 +2,7 @@ package com.example.roubaisha.counter.Map;
 
 import android.os.AsyncTask;
 
+import com.example.roubaisha.counter.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -58,11 +59,11 @@ public class GetNearbyPlaces extends AsyncTask<Object, String, String>
 
             markerOptions.position(latLng);
             markerOptions.title(nameOfPlace + ":"+ vicinity);
-            markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));
+            markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosque));
 
             mMap.addMarker(markerOptions);
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-            mMap.animateCamera(CameraUpdateFactory.zoomTo(10));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(12));
 
 
         }
