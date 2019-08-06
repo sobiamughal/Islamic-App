@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.roubaisha.counter">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -19,7 +20,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PendingPrayerLayerActivity"></activity>
+        <activity android:name=".TasbihOption"></activity>
+        <activity android:name=".PendingPrayerLayerActivity" />
         <activity android:name=".PendingPrayersActivity" />
         <activity android:name=".StopAzaan" />
 
@@ -62,8 +64,6 @@
         <activity android:name=".StopSound" />
         <activity android:name=".YesResponse" />
         <activity android:name=".NoResponse" />
-        <activity android:name=".Map.MapsActivity" />
-        <activity android:name=".Prayerguidance.Fajr1" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".Login_Signup.Login_MainActivity" />
         <activity android:name=".Login_Signup.Login_form" />
@@ -84,8 +84,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".CounterActivity" />
-        <activity android:name=".MainActivity" />
-
         <activity
             android:name=".TasbihActivity"
             android:parentActivityName=".HomeActivity" />
@@ -102,13 +100,15 @@
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MapActivity"
+            android:name=".Map.MapsActivity"
             android:parentActivityName=".MoreActivity" />
         <activity
             android:name=".prayertime.PrayerTimeActivity"
             android:parentActivityName=".MoreActivity" />
         <activity android:name=".duaen.Duaen" />
         <activity android:name=".duaen.D_ListActivity" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Names.AllahNamesActivity"/>
     </application>
 
 </manifest>

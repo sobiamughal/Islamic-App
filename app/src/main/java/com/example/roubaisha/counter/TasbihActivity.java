@@ -1,18 +1,28 @@
 package com.example.roubaisha.counter;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class TasbihActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class TasbihActivity extends AppCompatActivity  {
     ListView listView;
+    FloatingActionButton fab;
 
     String[] tasbihNames = {"SubhanAllah","Alhamdulilah","Astaghfirullah","Allah u Akbar","SubhanAllahi wa biHamdihi","La ilaha illa-llah"};
     int[] tasbihImages = {R.drawable.subhanallah,R.drawable.alhamdullillah,R.drawable.astagfirullah,R.drawable.allah_hu_akbar,R.drawable.subhanallah_wa_bihamdihi,R.drawable.la_ilaha_illa_llah};
@@ -20,6 +30,8 @@ public class TasbihActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tasbih);
+
+
 
         //finding listview
         listView = findViewById(R.id.listview);
@@ -38,7 +50,58 @@ public class TasbihActivity extends AppCompatActivity {
             }
         });
 
+        fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Dialog dialog = new Dialog(TasbihActivity.this);
+                dialog.setContentView(R.layout.layout_dialog);
+                EditText add_tasbih = dialog.findViewById(R.id.add_tasbih);
+                Button btn_cancel = dialog.findViewById(R.id.btn_cancel);
+                Button btn_add = dialog.findViewById(R.id.btn_add);
 
+                String tasbih = add_tasbih.getText().toString();
+
+                btn_add.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                    }
+                });
+                dialog.show();
+            }
+        });
+
+    }
+
+    public void openAlert(View view) {
+
+        final TextView name = view.findViewById(R.id.fruits);
+        final AlertDialog.Builder alert = new AlertDialog.Builder(TasbihActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.layout_dialog,null);
+
+        final EditText add_tasbih = mView.findViewById(R.id.add_tasbih);
+        Button btn_cancel = mView.findViewById(R.id.btn_cancel);
+        Button btn_add = mView.findViewById(R.id.btn_add);
+
+        alert.setView(mView);
+
+        final AlertDialog alertDialog = alert.create();
+        alertDialog.setCanceledOnTouchOutside(false);
+
+        btn_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.dismiss();
+            }
+        });
+        btn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //ListElementsArrayList.add(add_tasbih.getText().toString());
+                //customAdapter.notifyDataSetChanged();
+            }
+        });
+        alertDialog.show();
     }
 
     private class CustomAdapter extends BaseAdapter{

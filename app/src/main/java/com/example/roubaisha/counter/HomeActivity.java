@@ -85,7 +85,7 @@ public class HomeActivity extends AppCompatActivity {
 
                         break;
                     case R.id.ic_tasbih:
-                        Intent intent1 = new Intent(HomeActivity.this, TasbihActivity.class);
+                        Intent intent1 = new Intent(HomeActivity.this, TasbihOption.class);
                         startActivity(intent1);
                         break;
                     case R.id.ic_prayerg:

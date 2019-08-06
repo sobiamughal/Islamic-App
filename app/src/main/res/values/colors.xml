@@ -11,4 +11,13 @@
     <color name="color1">#424549</color>
     <color name="color2">#7e455e</color>
     <color name="color3">#796e25</color>
+
+    <color name="colorGradientStart">#F8DE7E</color>
+    <color name="colorGradientCenter">#F8DE7E</color>
+    <color name="colorGradientEnd">#D99058</color>
+
+    <color name="msg_no_notes">#999</color>
+    <color name="hint_enter_note">#89c3c3c3</color>
+    <color name="timestamp">#858585</color>
+    <color name="note_list_text">#232323</color>
 </resources>
