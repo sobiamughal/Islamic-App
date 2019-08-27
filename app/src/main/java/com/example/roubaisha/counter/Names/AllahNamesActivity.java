@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.example.roubaisha.counter.R;
 
@@ -13,11 +17,23 @@ import java.util.ArrayList;
 public class AllahNamesActivity extends AppCompatActivity {
 
     private RecyclerView.LayoutManager mLayoutManager;
+    Toolbar toolbar;
+    ImageButton name_playbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_allah_names);
+
+        toolbar = (Toolbar) findViewById(R.id.name_actionbar);
+        //setSupportActionBar(toolbar);
+        name_playbtn = (ImageButton) findViewById(R.id.name_playbtn);
+        name_playbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(AllahNamesActivity.this, "play karao apni marzi sy audio", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.re);
         mLayoutManager = new LinearLayoutManager(AllahNamesActivity.this);

@@ -50,26 +50,6 @@ public class TasbihActivity extends AppCompatActivity  {
             }
         });
 
-        fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Dialog dialog = new Dialog(TasbihActivity.this);
-                dialog.setContentView(R.layout.layout_dialog);
-                EditText add_tasbih = dialog.findViewById(R.id.add_tasbih);
-                Button btn_cancel = dialog.findViewById(R.id.btn_cancel);
-                Button btn_add = dialog.findViewById(R.id.btn_add);
-
-                String tasbih = add_tasbih.getText().toString();
-
-                btn_add.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                    }
-                });
-                dialog.show();
-            }
-        });
 
     }
 

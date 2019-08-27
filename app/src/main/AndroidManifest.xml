@@ -20,7 +20,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TasbihOption"></activity>
+        <activity android:name=".Qibla.QiblaActivity"></activity>
+        <activity android:name=".UserTasbih.ActPersonAdd" />
+        <activity android:name=".UserTasbih.ActPersonDetails" />
+        <activity android:name=".UserTasbih.ActPersonEdit" />
+        <activity android:name=".UserTasbih.UserTasbihDetailActivity" />
+        <activity android:name=".UserTasbih.UserTasbih" />
+        <activity android:name=".User_Tasbih_Activity" />
+        <activity android:name=".UserTasbihActivity" />
+        <activity android:name=".TasbihOption" />
         <activity android:name=".PendingPrayerLayerActivity" />
         <activity android:name=".PendingPrayersActivity" />
         <activity android:name=".StopAzaan" />
@@ -107,8 +115,8 @@
             android:parentActivityName=".MoreActivity" />
         <activity android:name=".duaen.Duaen" />
         <activity android:name=".duaen.D_ListActivity" />
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Names.AllahNamesActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Names.AllahNamesActivity" />
     </application>
 
 </manifest>

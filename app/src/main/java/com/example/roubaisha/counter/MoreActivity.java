@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.example.roubaisha.counter.Map.MapsActivity;
 import com.example.roubaisha.counter.Names.AllahNamesActivity;
+import com.example.roubaisha.counter.Qibla.QiblaActivity;
 import com.example.roubaisha.counter.duaen.Duaen;
 import com.example.roubaisha.counter.prayertime.PrayerTimeActivity;
 
@@ -26,6 +27,7 @@ public class MoreActivity extends AppCompatActivity {
     private CardView prayertimebtn;
     private CardView duaenbtn;
     private CardView pendingprayerbtn;
+    private CardView qiblabtn;
 
     private CardView namesbtn;
 
@@ -52,6 +54,7 @@ public class MoreActivity extends AppCompatActivity {
         tasbihbtn=(CardView)findViewById(R.id.tasbihbtn);
         pendingprayerbtn = (CardView)findViewById(R.id.pendingprayerbtn);
         namesbtn = (CardView)findViewById(R.id.namesbtn);
+        qiblabtn = (CardView)findViewById(R.id.qiblabtn);
 
         namesbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +96,12 @@ public class MoreActivity extends AppCompatActivity {
                 openPendingPrayerActivity();
             }
         });
+        qiblabtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openQiblaActivity();
+            }
+        });
 
         TextView title=(TextView)findViewById(R.id.more_tv);
 
@@ -126,6 +135,12 @@ public class MoreActivity extends AppCompatActivity {
         });
 
     }
+
+    private void openQiblaActivity() {
+        Intent intent = new Intent(this, QiblaActivity.class);
+        startActivity(intent);
+    }
+
     private void openNamesActivity() {
         Intent intent = new Intent(this, AllahNamesActivity.class);
         startActivity(intent);
@@ -140,7 +155,7 @@ public class MoreActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openTasbihActivity(){
-        Intent intent = new Intent(this, TasbihActivity.class);
+        Intent intent = new Intent(this, TasbihOption.class);
         startActivity(intent);
     }
     public void openNearestMosqueActivity(){

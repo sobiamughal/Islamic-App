@@ -57,8 +57,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // `id` and `timestamp` will be inserted automatically.
         // no need to add them
         values.put(Note.COLUMN_NOTE, note);
-        String sql1 = "insert into " + TABLE_NAME +" values('a', 'b','');";
-        db.execSQL(sql1);
+        long sql1 = db.insert(TABLE_NAME,null,values);
 
         // insert row
         long id = db.insert(TABLE_NAME, null, values);

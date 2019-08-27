@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
     private DatabaseHelper db;
 
-    String[] tasbihNames = {"SubhanAllah","Alhamdulilah","Astaghfirullah","Allah u Akbar","SubhanAllahi wa biHamdihi","La ilaha illa-llah"};
-    int[] tasbihImages = {R.drawable.subhanallah,R.drawable.subhanallah,R.drawable.subhanallah,R.drawable.subhanallah,R.drawable.subhanallah,R.drawable.subhanallah};
+    String[] tasbihNames = {""};
+    int[] tasbihImages = {R.drawable.tasbihicon,R.drawable.tasbihicon,R.drawable.tasbihicon,R.drawable.tasbihicon,R.drawable.tasbihicon,R.drawable.tasbihicon};
 
 
     @Override
@@ -45,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayList<ExampleItem> exampleList = new ArrayList<>();
-        exampleList.add(new ExampleItem(R.drawable.subhanallah, "Line 1", "Line 2"));
-        exampleList.add(new ExampleItem(R.drawable.subhanallah, "Line 3", "Line 4"));
-        exampleList.add(new ExampleItem(R.drawable.subhanallah, "Line 5", "Line 6"));
+        final ArrayList<ExampleItem> exampleList = new ArrayList<>();
+        exampleList.add(new ExampleItem(R.drawable.tasbihicon, "Line 1", "Line 2"));
+        exampleList.add(new ExampleItem(R.drawable.tasbihicon, "Line 3", "Line 4"));
+        exampleList.add(new ExampleItem(R.drawable.tasbihicon, "Line 5", "Line 6"));
 
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view, final int i) {
                 Intent intent = new Intent(getApplicationContext(),GalleryActivity.class);
-                intent.putExtra("name",tasbihNames[i]);
+                intent.putExtra("name", tasbihNames[i]);
                 intent.putExtra("image",tasbihImages[i]);
                 startActivity(intent);
             }

@@ -75,7 +75,7 @@ public class MapsActivity extends FragmentActivity implements
         GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
         switch (v.getId())
         {
-            case R.id.search_address:
+            /*case R.id.search_address:
                 EditText addressField = (EditText) findViewById(R.id.location_search);
                 String address = addressField.getText().toString();
                 List<Address> addressList=null;
@@ -113,6 +113,7 @@ public class MapsActivity extends FragmentActivity implements
                     Toast.makeText(this, "Please write any location name...", Toast.LENGTH_SHORT).show();
                 }
                 break;
+                */
 
             case R.id.mosques_nearby:
                 mMap.clear();

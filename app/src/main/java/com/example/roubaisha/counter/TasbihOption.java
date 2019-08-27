@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 
+import com.example.roubaisha.counter.UserTasbih.UserTasbih;
+
 public class TasbihOption extends AppCompatActivity implements View.OnClickListener {
 
     private CardView tasbih, usertasbih;
@@ -26,10 +28,13 @@ public class TasbihOption extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.tasbih:
-                Intent i = new Intent(TasbihOption.this,TasbihActivity.class); startActivity(i);
+                Intent i = new Intent(TasbihOption.this,TasbihActivity.class);
+                startActivity(i);
+                break;
             case R.id.usertasbih:
-                Intent in = new Intent(TasbihOption.this,MainActivity.class); startActivity(in);
-            default:break;
+                Intent in = new Intent(TasbihOption.this, UserTasbih.class);
+                startActivity(in);
+                break;
         }
     }
 }

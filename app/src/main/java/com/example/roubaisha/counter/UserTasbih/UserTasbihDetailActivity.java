@@ -1,4 +1,4 @@
-package com.example.roubaisha.counter;
+package com.example.roubaisha.counter.UserTasbih;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,8 +16,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class GalleryActivity extends AppCompatActivity implements View.OnClickListener {
+import com.example.roubaisha.counter.R;
+
+public class UserTasbihDetailActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Context ctx = UserTasbihDetailActivity.this;
+    Person person;
+    TextView tvName;
+    Button btEdit, btDelete, btSubmit;
 
     private SoundPool soundPool;
     private int tap_sound;
@@ -36,9 +44,9 @@ public class GalleryActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery);
+        setContentView(R.layout.activity_user_tasbih_detail);
 
-        //listdata = findViewById(R.id.listdata);
+        listdata = findViewById(R.id.listdata);
         //imageView = findViewById(R.id.imageView);
         //TextView txtView = findViewById(R.id.tvCountValue);
        // Intent intent = getIntent();
@@ -47,14 +55,29 @@ public class GalleryActivity extends AppCompatActivity implements View.OnClickLi
        // txtView.setText(name);
 
        // listdata.setText(name);
-        listdata = findViewById(R.id.listdata);
-        imageView = findViewById(R.id.imageView);
-        Intent intent = getIntent();
-        String receivedName =  intent.getStringExtra("name");
-        int receivedImage = intent.getIntExtra("image",0);
 
-        listdata.setText(receivedName);
-        imageView.setImageResource(receivedImage);
+        tvName = (TextView) findViewById(R.id.tvCountValue);
+        try{
+            Intent intent = getIntent();
+            Person person = (Person) intent.getExtras().getSerializable("Key_Person");
+            String name = person.getName();
+            listdata.setText(name);
+            //person = (Person) getIntent().getExtras().getSerializable("Key_Person");
+
+            //tvName.setText(person.name);
+
+        }catch (Exception e){
+            Toast.makeText(ctx, "Data Not Found ", Toast.LENGTH_SHORT).show();
+        }
+
+        //listdata = findViewById(R.id.listdata);
+        //imageView = findViewById(R.id.imageView);
+       // Intent intent = getIntent();
+       // String receivedName =  intent.getStringExtra("name");
+        //int receivedImage = intent.getIntExtra("image",0);
+
+        //listdata.setText(receivedName);
+        //imageView.setImageResource(receivedImage);
         //enable back Button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -96,7 +119,7 @@ public class GalleryActivity extends AppCompatActivity implements View.OnClickLi
             soundPool = new SoundPool(6, AudioManager.STREAM_MUSIC, 0);
         }
 
-        tap_sound = soundPool.load(this, R.raw.tap_sound, 1);
+        //tap_sound = soundPool.load(this, R.raw.tap_sound, 1);
     }
 
     public void playSound(View v) {
