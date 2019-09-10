@@ -25,6 +25,9 @@ public class AllahNamesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_allah_names);
 
+        getSupportActionBar().setTitle("Allah Names");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         toolbar = (Toolbar) findViewById(R.id.name_actionbar);
         //setSupportActionBar(toolbar);
         name_playbtn = (ImageButton) findViewById(R.id.name_playbtn);

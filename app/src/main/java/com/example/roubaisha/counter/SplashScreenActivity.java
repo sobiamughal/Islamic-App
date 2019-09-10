@@ -15,7 +15,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EasySplashScreen config = new EasySplashScreen(SplashScreenActivity.this)
                 .withFullScreen()
-                .withTargetActivity(HomeActivity.class)
+                .withTargetActivity(DashboardActivity.class)
                 .withSplashTimeOut(2000)
                 .withBackgroundColor(Color.parseColor("#dfb96e"))
                 .withAfterLogoText("Daar-ul-Jannah")

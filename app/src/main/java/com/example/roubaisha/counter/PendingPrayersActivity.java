@@ -36,6 +36,9 @@ public class PendingPrayersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pending_prayers);
 
+        getSupportActionBar().setTitle("Pending Prayer");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         materialCalendarView = findViewById(R.id.calendarView);
         materialCalendarView.setSelectionMode(MaterialCalendarView.SELECTION_MODE_MULTIPLE);
         PrayerName = findViewById(R.id.TvPrayerName);

@@ -21,6 +21,9 @@ public class PendingPrayerLayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pending_prayer_layer);
 
+        getSupportActionBar().setTitle("Pending Prayer");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         CvFajr = findViewById(R.id.CvFajr);
         CvZuhar = findViewById(R.id.CvZuhar);
         CvAsr = findViewById(R.id.CvAsr);

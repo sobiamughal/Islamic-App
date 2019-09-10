@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.example.roubaisha.counter.Map.MapsActivity;
 import com.example.roubaisha.counter.Names.AllahNamesActivity;
+import com.example.roubaisha.counter.Names.NamesOptionActivity;
 import com.example.roubaisha.counter.Qibla.QiblaActivity;
 import com.example.roubaisha.counter.duaen.Duaen;
 import com.example.roubaisha.counter.prayertime.PrayerTimeActivity;
@@ -142,7 +143,7 @@ public class MoreActivity extends AppCompatActivity {
     }
 
     private void openNamesActivity() {
-        Intent intent = new Intent(this, AllahNamesActivity.class);
+        Intent intent = new Intent(this, NamesOptionActivity.class);
         startActivity(intent);
     }
 

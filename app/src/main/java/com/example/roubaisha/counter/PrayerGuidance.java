@@ -37,6 +37,10 @@ public class PrayerGuidance extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prayer_guidance);
+
+//        getSupportActionBar().setTitle("Prayer Guidance");
+  //      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         Log.d(TAG, "onCreate: started");
 
 

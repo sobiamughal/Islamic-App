@@ -16,6 +16,8 @@ public class TasbihOption extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tasbih_option);
+        getSupportActionBar().setTitle("Tasbih");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tasbih = (CardView) findViewById(R.id.tasbih);
         usertasbih = (CardView) findViewById(R.id.usertasbih);

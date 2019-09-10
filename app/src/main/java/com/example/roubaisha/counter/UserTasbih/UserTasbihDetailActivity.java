@@ -46,6 +46,9 @@ public class UserTasbihDetailActivity extends AppCompatActivity implements View.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_tasbih_detail);
 
+        getSupportActionBar().setTitle(" ");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         listdata = findViewById(R.id.listdata);
         //imageView = findViewById(R.id.imageView);
         //TextView txtView = findViewById(R.id.tvCountValue);

@@ -20,7 +20,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Qibla.QiblaActivity"></activity>
+        <activity android:name=".DashboardActivity"></activity>
+        <activity
+            android:name=".Names.MuhammadNamesActivity"
+            android:parentActivityName=".Names.NamesOptionActivity" />
+        <activity
+            android:name=".Names.NamesOptionActivity"
+            android:parentActivityName=".MoreActivity" />
+        <activity android:name=".Qibla.QiblaActivity" />
         <activity android:name=".UserTasbih.ActPersonAdd" />
         <activity android:name=".UserTasbih.ActPersonDetails" />
         <activity android:name=".UserTasbih.ActPersonEdit" />
@@ -28,9 +35,15 @@
         <activity android:name=".UserTasbih.UserTasbih" />
         <activity android:name=".User_Tasbih_Activity" />
         <activity android:name=".UserTasbihActivity" />
-        <activity android:name=".TasbihOption" />
-        <activity android:name=".PendingPrayerLayerActivity" />
-        <activity android:name=".PendingPrayersActivity" />
+        <activity
+            android:name=".TasbihOption"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".PendingPrayerLayerActivity"
+            android:parentActivityName=".PendingPrayersActivity" />
+        <activity
+            android:name=".PendingPrayersActivity"
+            android:parentActivityName=".MoreActivity" />
         <activity android:name=".StopAzaan" />
 
         <service
@@ -94,7 +107,7 @@
         <activity android:name=".CounterActivity" />
         <activity
             android:name=".TasbihActivity"
-            android:parentActivityName=".HomeActivity" />
+            android:parentActivityName=".TasbihOption" />
         <activity android:name=".MoreActivity" />
         <activity
             android:name=".GalleryActivity"
@@ -116,7 +129,9 @@
         <activity android:name=".duaen.Duaen" />
         <activity android:name=".duaen.D_ListActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Names.AllahNamesActivity" />
+        <activity
+            android:name=".Names.AllahNamesActivity"
+            android:parentActivityName=".Names.NamesOptionActivity" />
     </application>
 
 </manifest>

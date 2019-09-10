@@ -31,7 +31,8 @@ public class TasbihActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tasbih);
 
-
+        getSupportActionBar().setTitle("Tasbih Activity");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //finding listview
         listView = findViewById(R.id.listview);
