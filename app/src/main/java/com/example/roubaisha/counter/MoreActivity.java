@@ -12,10 +12,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.roubaisha.counter.Map.MapsActivity;
-import com.example.roubaisha.counter.Names.AllahNamesActivity;
 import com.example.roubaisha.counter.Names.NamesOptionActivity;
 import com.example.roubaisha.counter.Qibla.QiblaActivity;
-import com.example.roubaisha.counter.duaen.Duaen;
+import com.example.roubaisha.counter.duaen.DuaActivity;
 import com.example.roubaisha.counter.prayertime.PrayerTimeActivity;
 
 public class MoreActivity extends AppCompatActivity {
@@ -87,10 +86,9 @@ public class MoreActivity extends AppCompatActivity {
         duaenbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDuaenActivity();
+                openDuaActivity();
             }
         });
-
         pendingprayerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -167,8 +165,8 @@ public class MoreActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PrayerTimeActivity.class);
         startActivity(intent);
     }
-    public void openDuaenActivity(){
-        Intent intent = new Intent(this, Duaen.class);
+    public void openDuaActivity(){
+        Intent intent = new Intent(this, DuaActivity.class);
         startActivity(intent);
     }
     public void openPendingPrayerActivity(){
