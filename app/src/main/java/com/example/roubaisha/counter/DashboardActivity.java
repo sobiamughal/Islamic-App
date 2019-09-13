@@ -12,6 +12,10 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
+import com.example.roubaisha.counter.Map.MapsActivity;
+import com.example.roubaisha.counter.Names.NamesOptionActivity;
+import com.example.roubaisha.counter.duaen.DuaActivity;
+import com.example.roubaisha.counter.prayertime.PrayerTimeActivity;
 import com.luseen.spacenavigation.SpaceItem;
 import com.luseen.spacenavigation.SpaceNavigationView;
 import com.luseen.spacenavigation.SpaceOnClickListener;
@@ -27,6 +31,7 @@ public class DashboardActivity extends AppCompatActivity {
     private RelativeLayout nearestmosquebtn;
     private RelativeLayout prayertimebtn;
     private RelativeLayout pendingprayerbtn;
+    private RelativeLayout namesbtn;
 
     SpaceNavigationView spaceNavigationView;
 
@@ -39,7 +44,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         spaceNavigationView.initWithSaveInstanceState(savedInstanceState);
         spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_home_black_24dp));
-        spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_muslim_man_praying));
+        spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_dua_hands));
         spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_access_time_black_24dp));
         spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_muslim_tasbih));
 
@@ -51,8 +56,28 @@ public class DashboardActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(int itemIndex, String itemName) {
-                Toast.makeText(DashboardActivity.this, itemIndex + " " + itemName, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(DashboardActivity.this, itemIndex + " " + itemName, Toast.LENGTH_SHORT).show();
                 spaceNavigationView.setCentreButtonSelectable(true);
+
+                if (itemIndex ==0 )
+                {
+                    Intent intent = new Intent(DashboardActivity.this,DashboardActivity.class);
+                    startActivity(intent);
+                }else if (itemIndex == 1)
+                {
+                    Intent intent = new Intent(DashboardActivity.this, DuaActivity.class);
+                    startActivity(intent);
+                }else if (itemIndex == 2)
+                {
+                    Intent intent = new Intent(DashboardActivity.this,PrayerTimeActivity.class);
+                    startActivity(intent);
+                }else if (itemIndex == 3)
+                {
+                    Intent intent = new Intent(DashboardActivity.this,TasbihOption.class);
+                    startActivity(intent);
+                }else {}
+
+
             }
 
             @Override
@@ -86,6 +111,52 @@ public class DashboardActivity extends AppCompatActivity {
                 openTasbihActivity();
             }
         });
+        nearestmosquebtn= findViewById(R.id.nearestmosquebtn);
+        nearestmosquebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMosqueActivity();
+            }
+        });
+        prayertimebtn= findViewById(R.id.prayertimebtn);
+        prayertimebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPrayerTimeActivity();
+            }
+        });
+        pendingprayerbtn = findViewById(R.id.pendingprayerbtn);
+        pendingprayerbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openPendingPrayerActivity();
+            }
+        });
+        namesbtn = findViewById(R.id.namesbtn);
+        namesbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openNamesActivity();
+            }
+        });
+    }
+
+    private void openNamesActivity() {
+        Intent intent = new Intent(this, NamesOptionActivity.class);
+        startActivity(intent);
+    }
+
+    private void openPendingPrayerActivity() {
+        Intent intent = new Intent(this, PendingPrayerLayerActivity.class);
+        startActivity(intent);
+    }
+
+    private void openPrayerTimeActivity() {
+        Intent intent = new Intent(this, PrayerTimeActivity.class);
+        startActivity(intent);
+    }
+
+    private void openMosqueActivity() {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 
     private void openTasbihActivity() {

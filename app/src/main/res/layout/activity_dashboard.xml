@@ -61,7 +61,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icons_02"
+                    android:src="@drawable/tasbihicon_03"
                     android:layout_margin="25dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icons_02"
+                    android:src="@drawable/nearesticon_02"
                     android:layout_margin="25dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icons_02"
+                    android:src="@drawable/prayerguidanceicon_03"
                     android:layout_margin="25dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -125,7 +125,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icons_02"
+                    android:src="@drawable/prayertimeicon_02"
                     android:layout_margin="25dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icons_02"
+                    android:src="@drawable/prayerguidanceicon_03"
                     android:layout_margin="25dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -163,7 +163,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icons_02"
+                    android:src="@drawable/nameicon_02"
                     android:layout_margin="25dp"/>
                 <TextView
                     android:layout_width="wrap_content"
