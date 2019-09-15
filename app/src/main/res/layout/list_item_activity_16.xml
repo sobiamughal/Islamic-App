@@ -10,17 +10,21 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="wrap_content"
-        android:layout_height="125dp"
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="440dp"
-        android:src="@drawable/msp" />
+        android:gravity="center"
+        android:text="الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -47,6 +51,7 @@
         android:layout_marginBottom="262dp"
         android:text="تمام خوبیاں اللہ عزوجل کے لئے جس نے مجھ کو یہ کپڑا پہنایا اور میری قوت و طاقت کے بغیر مجھ کو عطا فرمایا"
         android:textSize="15dp" />
+
 
     <Button
         android:id="@+id/button_play"
