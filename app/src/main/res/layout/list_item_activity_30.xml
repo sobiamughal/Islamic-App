@@ -10,28 +10,31 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="392dp"
-        android:layout_height="135dp"
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="493dp"
-        android:src="@drawable/msdd" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="440dp"
+        android:gravity="center"
+        android:text="اَللّٰهُمَّ إِنَّا نَجْعَلُكَ فِي نُحُورِهِمْ وَنَعُوذُ بِكَ مِنْ شُرُورِهِمْ."
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="395dp"
-        android:layout_height="82dp"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="390dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="341dp"
         android:text="O Allah, we make you the turner of the (enemies) chest (heart) and seek refuge in You from their evils."
         android:textSize="15dp" />
 
@@ -42,12 +45,13 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="17dp"
-        android:layout_marginRight="17dp"
-        android:layout_marginBottom="311dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="280dp"
         android:text="اے اللہ عزوجل ہم ان (کفار و مشرکین) کے مقابل تجھے کرتے ہیں اور ان کے شر سے تیری پناہ لیتے ہیں۔
 "
         android:textSize="15dp" />
+
 
     <Button
         android:id="@+id/button_play"

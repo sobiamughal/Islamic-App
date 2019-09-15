@@ -10,18 +10,21 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="395dp"
-        android:layout_height="192dp"
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="452dp"
-        android:src="@drawable/msoo" />
-
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="440dp"
+        android:gravity="center"
+        android:text="اَللّٰهُمَّ إِنِّي أَسْأَلُكَ عِلْماً نَافِعاً وَرِزْقاً وَاسِعاً وَشِفَاءً مِنْ كُلِّ دَاءٍ
+"
+        android:textSize="20dp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"

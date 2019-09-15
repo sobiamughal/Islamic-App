@@ -10,17 +10,20 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="183dp"
-        android:layout_height="32dp"
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="69dp"
-        android:layout_marginRight="69dp"
-        android:layout_marginBottom="491dp"
-        android:src="@drawable/msx" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="440dp"
+        android:gravity="center"
+        android:text="أَعُوذُ بِاللَّهِ مِنْ شَرِّ هَذَا لغاسِق.َِ"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView"

@@ -9,18 +9,21 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp">
 
-
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="159dp"
-        android:layout_height="wrap_content"
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
-        android:layout_marginBottom="413dp"
-        android:src="@drawable/msl" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="450dp"
+        android:gravity="center"
+        android:text="اَلْحَمْدُ لِلّٰہُِ."
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -29,9 +32,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="353dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="407dp"
         android:text="All praise onto Allah Almighty."
         android:textSize="15dp" />
 
@@ -42,9 +45,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="297dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="346dp"
         android:text="تمام تعریفیں اللہ عزوجل کےلئے ہیں"
         android:textSize="15dp" />
 

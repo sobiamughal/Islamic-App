@@ -10,13 +10,20 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="wrap_content"
-        android:layout_height="216dp"
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="111dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="470dp"
-        android:src="@drawable/msd" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="450dp"
+        android:gravity="center"
+        android:text="الْحَمْدُ لِلّٰہِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ."
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView"
@@ -25,9 +32,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="402dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="383dp"
         android:text="All Praise onto Allah (Almighty) Who granted us life after death (Sleep) and we are return to him."
         android:textSize="15dp" />
 

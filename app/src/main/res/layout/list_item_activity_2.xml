@@ -10,13 +10,21 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="wrap_content"
-        android:layout_height="216dp"
+    <TextView
+        android:layout_width="251dp"
+        android:layout_height="118dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="470dp"
-        android:src="@drawable/msb" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="458dp"
+        android:gravity="center"
+        android:text="الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مِنَ الْمُسْلِمِينَ."
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -25,9 +33,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="402dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="374dp"
         android:text="Thanks to Allah Azzawajal who fed us and made us among Muslims"
         android:textSize="15dp" />
 
@@ -38,9 +46,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="42dp"
-        android:layout_marginRight="42dp"
-        android:layout_marginBottom="283dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="321dp"
         android:text="اللہ عزوجل کا شکر ہے جس نے ہمیں کھلایا پلایا اور مسلمانوں میں سے بنایا"
         android:textSize="15dp" />
     <Button

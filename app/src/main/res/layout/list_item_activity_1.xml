@@ -10,28 +10,32 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="wrap_content"
-        android:layout_height="133dp"
+    <TextView
+        android:layout_width="315dp"
+        android:layout_height="115dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="23dp"
-        android:layout_marginRight="23dp"
-        android:layout_marginBottom="420dp"
-        android:src="@drawable/msa" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="446dp"
+        android:gravity="center"
+        android:text="بِسْمِ اللّٰہِ وَعَلٰی بَرَكَةِ اللّٰہِ.ِ"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="337dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="357dp"
         android:text="In the name of Allah and with the blessings of Allah I begin (eating)"
         android:textSize="15dp" />
 
@@ -43,9 +47,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="261dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="306dp"
         android:text="میں نے الله کے نام کے ساتھ اور الله کی برکت پر کھانا شروع کیا"
         android:textSize="15dp" />
 

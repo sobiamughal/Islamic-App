@@ -10,18 +10,20 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="441dp"
-        android:src="@drawable/msz" />
-
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="440dp"
+        android:gravity="center"
+        android:text="اَللّٰهُمَّ بَارِكْ لَنَا فِيهِ وَزِدْنَا مِنْهُاً"
+        android:textSize="20dp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="395dp"
@@ -48,6 +50,7 @@
         android:text="یا الٰہی عزوجل ہمارے لئے اس میں برکت دے اور ہمیں اس سے زیادہ عنایت فرما۔
 "
         android:textSize="15dp" />
+
 
     <Button
         android:id="@+id/button_play"

@@ -10,28 +10,33 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="395dp"
-        android:layout_height="140dp"
+
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="487dp"
-        android:src="@drawable/msee" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="440dp"
+        android:gravity="center"
+        android:text="اَللّٰهُمَّ لَكَ الْحَمْدُ كَمَا كَسَوْتَنِيهِ أَسْأَلُكَ خَيْرَهٗ وَخَيْرَ مَا صُنِعَ لَهٗ وَأَعُوذُ مِنْ شَرِّهٖ وَشَرِّ مَا صُنِعَ لَهْٗ."
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="395dp"
-        android:layout_height="109dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="385dp"
+        android:layout_marginBottom="376dp"
         android:text="O Allah Azzawajal, All praise is for you only, you have made me wear( this sheet of cloth or turban) and I ask you for it's goodness, and the goodness of that thing for which It has been made, and I ask you for your refuge from it's badness and badness of that thing for which it has been made.."
         android:textSize="12dp" />
 
@@ -42,9 +47,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="269dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="260dp"
         android:text="اے اللہ عزوجل ہم ان (کفار و مشرکین) کے مقابل تجھے کرتے ہیں اور ان کے شر سے تیری پناہ لیتے ہیں۔یا للہ عزوجل ، تمام تعریفیں تیرے ہی لئے ہیں تو نے ہی مجھے (یہ چادر یا عمامہ) پہنایا ہے اور میں تجھ سے اس کی بھلائی طلب کر تا ہوں اور اس چیز کی بھلائی جس کے لئے یہ بنایا گیا ہے اور میں اس کےشر سے تیری پناہ مانگتا ہوں اور اس چیز کے شر سے بھی جس کے لئے اس کو بنایا گیا"
         android:textSize="12dp" />
 

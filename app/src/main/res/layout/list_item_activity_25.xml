@@ -10,28 +10,31 @@
     android:paddingTop="16dp">
 
 
-    <ImageView
-        android:id="@+id/images"
-        android:layout_width="320dp"
-        android:layout_height="68dp"
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginBottom="484dp"
-        android:src="@drawable/msy" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="440dp"
+        android:gravity="center"
+        android:text="اَلْحَمْدُ لِلّٰہِ الَّذِي عَافَانِي مِمَّا ابْتَلَاكَ بِهٖ وَفَضَّلَنِي عَلٰی كَثِيرِ مِمَّنْ خَلَقَ تَفْضِيلَاً"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="395dp"
-        android:layout_height="93dp"
+        android:layout_width="393dp"
+        android:layout_height="96dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="371dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="334dp"
         android:text="Thanks to Allah Azzawajal who granted me relief from this affliction, which you have been involved in, and grant me greatness over a lot of your creatures."
         android:textSize="15dp" />
 
@@ -42,9 +45,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="281dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="254dp"
         android:text="اللہ عزوجل کا شکر ہے جس نے مجھے اس مصیبت سے عافیت دی، جس میں تجھے مبتلا کیا، اور مجھے اپنی بہت سی مخلوق پر فضیلت دی۔
 "
         android:textSize="15dp" />
