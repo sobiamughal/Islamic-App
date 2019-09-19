@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.materialtabs.fragments.FiveFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnOpenis"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="4 Rakaat Sunnah"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="348dp" />
+
+            <Button
+                android:id="@+id/btnOpenif"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="4 Rakaat Fard"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="348dp" />
+
+            <Button
+                android:id="@+id/btnOpeniss"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="2 Rakaat Sunnah"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="348dp" />
+
+            <Button
+                android:id="@+id/btnOpenin"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="2 Rakaat Nafil"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="348dp" />
+
+            <Button
+                android:id="@+id/btnOpeniw"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="3 RAKAAT WITR"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="348dp" />
+
+            <Button
+                android:id="@+id/btnOpeninn"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="2 Rakaat Nafil"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="348dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
