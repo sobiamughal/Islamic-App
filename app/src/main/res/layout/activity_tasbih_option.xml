@@ -119,22 +119,6 @@
 
     </LinearLayout>
 
-    <com.luseen.spacenavigation.SpaceNavigationView
-        android:id="@+id/space"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:active_item_color="@color/colorAccent"
-        app:centre_button_color="#dfb96e"
-        app:inactive_item_color="#000000"
-        app:space_background_color="#FFFFFF"
-        app:centre_button_icon="@drawable/ic_home_black_24dp"
-
-        app:space_item_icon_size="30dp"
-        app:inactive_centre_button_icon_color="#FFFFFF"
-        app:active_centre_button_background_color="#FF9800"
-        app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
-        app:space_item_text_size="@dimen/space_item_text_default_size" />
 
 
 </android.support.design.widget.CoordinatorLayout>

@@ -33,8 +33,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_play_arrow_black_24dp" />
-                            <entry key="sourceFile" value="C:\Users\Roubaisha" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="ic_holy_quran" />
+                            <entry key="sourceFile" value="C:\Users\Roubaisha\Downloads\holy-quran.svg" />
                           </map>
                         </option>
                       </PersistentState>

@@ -67,6 +67,8 @@ public class PrayerTimeActivity extends AppCompatActivity {
             }
         });
 
+        url = "http://muslimsalat.com/karachi.json?key=b2d880ae06d9e5a5cc7088d1ae0b0158";
+        searchLocation();
 
 
 

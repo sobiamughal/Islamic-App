@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.support.v7.widget.CardView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -14,6 +17,8 @@ import android.widget.ViewFlipper;
 
 import com.example.roubaisha.counter.Map.MapsActivity;
 import com.example.roubaisha.counter.Names.NamesOptionActivity;
+import com.example.roubaisha.counter.Qibla.QiblaActivity;
+import com.example.roubaisha.counter.activity.ScrollableTabsActivity;
 import com.example.roubaisha.counter.duaen.DuaActivity;
 import com.example.roubaisha.counter.prayertime.PrayerTimeActivity;
 import com.luseen.spacenavigation.SpaceItem;
@@ -46,12 +51,12 @@ public class DashboardActivity extends AppCompatActivity {
         spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_home_black_24dp));
         spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_dua_hands));
         spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_access_time_black_24dp));
-        spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_muslim_tasbih));
+        spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.ic_qibla_compass));
 
         spaceNavigationView.setSpaceOnClickListener(new SpaceOnClickListener() {
             @Override
             public void onCentreButtonClick() {
-                Toast.makeText(DashboardActivity.this,"onCentreButtonClick", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DashboardActivity.this,"Coming Soon", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -73,7 +78,7 @@ public class DashboardActivity extends AppCompatActivity {
                     startActivity(intent);
                 }else if (itemIndex == 3)
                 {
-                    Intent intent = new Intent(DashboardActivity.this,TasbihOption.class);
+                    Intent intent = new Intent(DashboardActivity.this, QiblaActivity.class);
                     startActivity(intent);
                 }else {}
 
@@ -139,6 +144,23 @@ public class DashboardActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        if(id==R.id.action_settings){
+            Intent intent = new Intent(DashboardActivity.this,FuzulActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     private void openNamesActivity() {
         Intent intent = new Intent(this, NamesOptionActivity.class);
         startActivity(intent);
@@ -165,7 +187,7 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void openPrayerGuidanceActivity() {
-        Intent intent = new Intent(this, PrayerGuidance.class);
+        Intent intent = new Intent(this, ScrollableTabsActivity.class);
         startActivity(intent);
     }
 }

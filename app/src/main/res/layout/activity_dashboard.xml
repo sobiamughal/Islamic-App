@@ -187,7 +187,7 @@
         app:centre_button_color="#dfb96e"
         app:inactive_item_color="#000000"
         app:space_background_color="#FFFFFF"
-        app:centre_button_icon="@drawable/ic_home_black_24dp"
+        app:centre_button_icon="@drawable/ic_holy_quran"
 
         app:space_item_icon_size="30dp"
         app:inactive_centre_button_icon_color="#FFFFFF"

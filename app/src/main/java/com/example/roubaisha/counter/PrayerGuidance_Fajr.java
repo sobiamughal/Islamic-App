@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class PrayerGuidance_Fajr extends Fragment {
     private static final String TAG = "PrayerGuidanceActivity";
@@ -21,15 +22,6 @@ public class PrayerGuidance_Fajr extends Fragment {
                              Bundle savedInstanceState) {
         Log.d(TAG, "onCreate: started.");
         View view = inflater.inflate(R.layout.fragment_prayer_guidance_fajr, container, false);
-
-        Button btnfajr1 =(Button)  view.findViewById(R.id.pgfajrbtn1);
-        btnfajr1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                
-            }
-        });
-
 
         return view;
     }
