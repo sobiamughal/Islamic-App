@@ -82,15 +82,15 @@ public class HomeActivity extends AppCompatActivity {
 
                         break;
                     case R.id.ic_tasbih:
-                        Intent intent1 = new Intent(com.example.roubaisha.counter.HomeActivity.this, TasbihActivity.class);
+                        Intent intent1 = new Intent(HomeActivity.this, TasbihActivity.class);
                         startActivity(intent1);
                         break;
                     case R.id.ic_prayerg:
-                        Intent intent2 = new Intent(com.example.roubaisha.counter.HomeActivity.this, PrayerGuidance.class);
+                        Intent intent2 = new Intent(HomeActivity.this, PrayerGuidance.class);
                         startActivity(intent2);
                         break;
                     case R.id.ic_more:
-                        Intent intent3 = new Intent(com.example.roubaisha.counter.HomeActivity.this, MoreActivity.class);
+                        Intent intent3 = new Intent(HomeActivity.this, MoreActivity.class);
                         startActivity(intent3);
                         break;
                 }

@@ -21,10 +21,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".FuzulActivity"></activity>
-        <activity android:name=".DashboardActivity" />
+        <activity android:name=".DashboardActivity" ></activity>
         <activity
             android:name=".Names.MuhammadNamesActivity"
-            android:parentActivityName=".Names.NamesOptionActivity" />
+            android:parentActivityName=".Names.NamesOptionActivity" ></activity>
         <activity
             android:name=".Names.NamesOptionActivity"
             android:parentActivityName=".MoreActivity" />
@@ -38,7 +38,7 @@
         <activity android:name=".UserTasbihActivity" />
         <activity
             android:name=".TasbihOption"
-            android:parentActivityName=".HomeActivity" />
+            android:parentActivityName=".HomeActivity" ></activity>
         <activity
             android:name=".PendingPrayerLayerActivity"
             android:parentActivityName=".PendingPrayersActivity" />
@@ -98,7 +98,8 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -106,12 +107,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".CounterActivity" />
-        <activity
-            android:name=".TasbihActivity"
+        <activity android:name=".TasbihActivity"
             android:parentActivityName=".TasbihOption" />
         <activity android:name=".MoreActivity" />
-        <activity
-            android:name=".GalleryActivity"
+        <activity android:name=".GalleryActivity"
             android:parentActivityName=".TasbihActivity" />
         <activity
             android:name=".CalendarActivity"
@@ -121,8 +120,7 @@
             android:label="@string/title_activity_prayer_guidance"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Map.MapsActivity"
+        <activity android:name=".Map.MapsActivity"
             android:parentActivityName=".MoreActivity" />
         <activity
             android:name=".prayertime.PrayerTimeActivity"
@@ -131,7 +129,6 @@
         <activity
             android:name=".Names.AllahNamesActivity"
             android:parentActivityName=".Names.NamesOptionActivity" />
-        android:parentActivityName=".MoreActivity" />
         <activity android:name=".duaen.DuaActivity"
             android:parentActivityName=".MoreActivity"/>
         <activity android:name=".duaen.MusnoonActivity"
@@ -226,6 +223,93 @@
             android:parentActivityName=".duaen.MusnoonActivity"/>
         <activity android:name=".duaen.ListItemActivity41"
             android:parentActivityName=".duaen.MusnoonActivity"/>
+
+        <activity android:name=".activity.ScrollableTabsActivity"></activity>
+        <activity
+            android:name=".activity.Fajarfard"
+            android:label="Fajr: 2 Rakaat Fard"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Fajrsunnah"
+            android:label="Fajr: 2 Rakaat Sunnah"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Zuharsunnah"
+            android:label="Duhr: 4 Rakaat Sunnah"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Zuharfard"
+            android:label="Duhr: 4 Rakaat Fard"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Zuhar_sunnah"
+            android:label="Duhr: 2 Rakaat Sunnah"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Zuharnafil"
+            android:label="Duhr: 2 Rakaat Nafil"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Maghribfard"
+            android:label="Maghrib: 3 Rakaat Fard"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Maghribsunnah"
+            android:label="Maghrib: 2 Rakaat Sunnah"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Maghribnafil"
+            android:label="Maghrib: 2 Rakaat Nafil"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Asrfard"
+            android:label="Asr: 4 Rakaat Fard"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Asrsunnah"
+            android:label="Asr: 4 Rakaat Sunnah"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Ishasunnah"
+            android:label="Isha: 4 Rakaat Sunnah"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Ishafard"
+            android:label="Isha: 4 Rakaat Sunnah"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Isha_sunnah"
+            android:label="Isha: 2 Rakaat Sunnah"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Ishanafil"
+            android:label="Isha: 2 Rakaat Nafil"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Ishawitr"
+            android:label="Isha: 3 Rakaat Witr"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
+        <activity
+            android:name=".activity.Isha_nafil"
+            android:label="Isha: 2 Rakaat Nafil"
+            android:parentActivityName=".activity.ScrollableTabsActivity" >
+        </activity>
     </application>
 
 </manifest>

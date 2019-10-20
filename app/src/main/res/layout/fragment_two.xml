@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.materialtabs.fragments.TwoFragment">
+
+    <Button
+        android:id="@+id/btnOpends"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="79dp"
+        android:text="4 Rakaat Sunnah"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnOpendf"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="162dp"
+        android:text="4 Rakaat Fard"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnOpendss"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="244dp"
+        android:text="2 Rakaat Sunnah"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnOpendn"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="327dp"
+        android:text="2 Rakaat Nafil"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
