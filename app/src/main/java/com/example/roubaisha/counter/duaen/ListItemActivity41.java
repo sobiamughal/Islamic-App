@@ -10,6 +10,7 @@ import com.example.roubaisha.counter.R;
 
 public class ListItemActivity41 extends AppCompatActivity {
     Button play;
+    MediaPlayer mP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +18,7 @@ public class ListItemActivity41 extends AppCompatActivity {
         getSupportActionBar().setTitle("Dua when drinking zam zam water ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         play = (Button)findViewById(R.id.button_play);
-        final MediaPlayer mP = MediaPlayer.create(ListItemActivity41.this, R.raw.mspp);
+         mP = MediaPlayer.create(ListItemActivity41.this, R.raw.mspp);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +31,13 @@ public class ListItemActivity41 extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void onBackPressed(){
+        super.onBackPressed();
+        //stopAndPlay();
+        mP.stop();
+        finish();
+
     }
 
 }

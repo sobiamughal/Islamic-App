@@ -15,7 +15,7 @@ import java.io.IOException;
 public class MorningActivity extends AppCompatActivity
 {
     int flag = 0;
-
+    MediaPlayer mediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -414,6 +414,12 @@ public class MorningActivity extends AppCompatActivity
         }
         mediaPlayer.start();
     }
+    public void onBackPressed(){
+        super.onBackPressed();
+        //stopAndPlay();
+        mediaPlayer.stop();
+        finish();
 
+    }
 }
 

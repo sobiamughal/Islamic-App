@@ -10,6 +10,7 @@ import com.example.roubaisha.counter.R;
 
 public class ListItemActivity3 extends AppCompatActivity {
     Button play;
+    MediaPlayer mP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +18,7 @@ public class ListItemActivity3 extends AppCompatActivity {
         getSupportActionBar().setTitle("Dua before sleeping  ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         play = (Button)findViewById(R.id.button_play);
-        final MediaPlayer mP = MediaPlayer.create(ListItemActivity3.this, R.raw.msc);
+        mP = MediaPlayer.create(ListItemActivity3.this, R.raw.msc);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,5 +31,12 @@ public class ListItemActivity3 extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void onBackPressed(){
+        super.onBackPressed();
+        //stopAndPlay();
+        mP.stop();
+        finish();
+
     }
 }
