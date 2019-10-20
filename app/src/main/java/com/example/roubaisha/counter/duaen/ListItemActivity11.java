@@ -10,14 +10,14 @@ import com.example.roubaisha.counter.R;
 
 public class ListItemActivity11 extends AppCompatActivity {
     Button play;
+    MediaPlayer mP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_item_activity_11);
         getSupportActionBar().setTitle("Dua when meeting another muslim");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        play = (Button)findViewById(R.id.button_play);
-        final MediaPlayer mP = MediaPlayer.create(ListItemActivity11.this, R.raw.msk);
+        mP = MediaPlayer.create(ListItemActivity11.this, R.raw.msk);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,5 +30,12 @@ public class ListItemActivity11 extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void onBackPressed(){
+        super.onBackPressed();
+        //stopAndPlay();
+        mP.stop();
+        finish();
+
     }
 }

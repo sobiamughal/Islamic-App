@@ -14,13 +14,14 @@ import java.io.IOException;
 
 public class AfternActivity extends AppCompatActivity{
         int flag = 0;
+    MediaPlayer mediaPlayer;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_after);
             getSupportActionBar().setTitle("After Prayers");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            final MediaPlayer mediaPlayer = new MediaPlayer();
+            mediaPlayer = new MediaPlayer();
             final Button button1 = (Button) findViewById(R.id.button1);
             button1.setOnClickListener(new View.OnClickListener() {
 
@@ -251,6 +252,12 @@ public class AfternActivity extends AppCompatActivity{
             }
             mediaPlayer.start();
         }
+    public void onBackPressed(){
+        super.onBackPressed();
+        //stopAndPlay();
+        mediaPlayer.stop();
+        finish();
 
+    }
 }
 

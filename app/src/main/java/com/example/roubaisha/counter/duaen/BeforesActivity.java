@@ -15,13 +15,14 @@ import java.io.IOException;
 public class BeforesActivity extends AppCompatActivity
 {
     int flag = 0;
+    MediaPlayer mediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_before);
         getSupportActionBar().setTitle("Before Sleeping");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        final MediaPlayer mediaPlayer = new MediaPlayer();
+      mediaPlayer = new MediaPlayer();
         final Button button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -186,6 +187,12 @@ public class BeforesActivity extends AppCompatActivity
         }
         mediaPlayer.start();
     }
+    public void onBackPressed(){
+        super.onBackPressed();
+        //stopAndPlay();
+        mediaPlayer.stop();
+        finish();
 
+    }
 }
 
