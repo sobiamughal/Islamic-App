@@ -40,4 +40,16 @@ public class ListItemActivity41 extends AppCompatActivity {
 
     }
 
+    @Override
+
+    protected void onPause() {
+        super.onPause();
+        if (mP != null){
+            mP.stop();
+            if (isFinishing()){
+                mP.stop();
+                mP.release();
+            }
+        }
+    }
 }
