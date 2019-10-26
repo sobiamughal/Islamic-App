@@ -194,5 +194,16 @@ public class BeforesActivity extends AppCompatActivity
         finish();
 
     }
-}
+    @Override
 
+    protected void onPause() {
+        super.onPause();
+        if (mediaPlayer != null){
+            mediaPlayer.stop();
+            if (isFinishing()){
+                mediaPlayer.stop();
+                mediaPlayer.release();
+            }
+        }
+    }
+}
