@@ -1,9 +1,7 @@
-package com.example.roubaisha.counter.prayertime;
+package com.example.roubaisha.counter;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-
-import com.example.roubaisha.counter.R;
 
 public class PrayerTimeYearActivity extends AppCompatActivity {
 
