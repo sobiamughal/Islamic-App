@@ -226,6 +226,9 @@
             android:parentActivityName=".duaen.MusnoonActivity"/>
         <activity android:name=".duaen.ListItemActivity41"
             android:parentActivityName=".duaen.MusnoonActivity"/>
+        <activity android:name=".prayertime.PrayerTimeYearActivity"
+            android:label="Prayer Timing Yearly"
+            android:parentActivityName=".prayertime.PrayerTimeActivity" />
     </application>
 
 </manifest>

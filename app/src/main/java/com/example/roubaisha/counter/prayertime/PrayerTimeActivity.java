@@ -1,8 +1,12 @@
 package com.example.roubaisha.counter.prayertime;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -67,6 +71,8 @@ public class PrayerTimeActivity extends AppCompatActivity {
             }
         });
 
+        url = "http://muslimsalat.com/karachi.json?key=b2d880ae06d9e5a5cc7088d1ae0b0158";
+        searchLocation();
 
 
 
@@ -132,4 +138,21 @@ public class PrayerTimeActivity extends AppCompatActivity {
 // Adding request to request queue
         AppController.getInstance().addToRequestQueue(jsonObjReq, tag_json_obj);
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_calendar,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        if(id==R.id.action_pcalendar){
+            Intent intent = new Intent(PrayerTimeActivity.this, PrayerTimeYearActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
