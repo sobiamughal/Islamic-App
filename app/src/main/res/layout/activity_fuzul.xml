@@ -5,5 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FuzulActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting Activity"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

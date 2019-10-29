@@ -21,10 +21,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".FuzulActivity"></activity>
-        <activity android:name=".DashboardActivity" />
+        <activity android:name=".DashboardActivity" ></activity>
         <activity
             android:name=".Names.MuhammadNamesActivity"
-            android:parentActivityName=".Names.NamesOptionActivity" />
+            android:parentActivityName=".Names.NamesOptionActivity" ></activity>
         <activity
             android:name=".Names.NamesOptionActivity"
             android:parentActivityName=".MoreActivity" />
@@ -38,7 +38,7 @@
         <activity android:name=".UserTasbihActivity" />
         <activity
             android:name=".TasbihOption"
-            android:parentActivityName=".HomeActivity" />
+            android:parentActivityName=".HomeActivity" ></activity>
         <activity
             android:name=".PendingPrayerLayerActivity"
             android:parentActivityName=".PendingPrayersActivity" />
@@ -98,7 +98,8 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -106,12 +107,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".CounterActivity" />
-        <activity
-            android:name=".TasbihActivity"
+        <activity android:name=".TasbihActivity"
             android:parentActivityName=".TasbihOption" />
         <activity android:name=".MoreActivity" />
-        <activity
-            android:name=".GalleryActivity"
+        <activity android:name=".GalleryActivity"
             android:parentActivityName=".TasbihActivity" />
         <activity
             android:name=".CalendarActivity"
@@ -121,8 +120,7 @@
             android:label="@string/title_activity_prayer_guidance"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Map.MapsActivity"
+        <activity android:name=".Map.MapsActivity"
             android:parentActivityName=".MoreActivity" />
         <activity
             android:name=".prayertime.PrayerTimeActivity"
@@ -131,7 +129,6 @@
         <activity
             android:name=".Names.AllahNamesActivity"
             android:parentActivityName=".Names.NamesOptionActivity" />
-        android:parentActivityName=".MoreActivity" />
         <activity android:name=".duaen.DuaActivity"
             android:parentActivityName=".MoreActivity"/>
         <activity android:name=".duaen.MusnoonActivity"
@@ -226,9 +223,12 @@
             android:parentActivityName=".duaen.MusnoonActivity"/>
         <activity android:name=".duaen.ListItemActivity41"
             android:parentActivityName=".duaen.MusnoonActivity"/>
+
         <activity android:name=".PrayerTimeYearActivity"
             android:label="Prayer Timings Yearly"
             android:parentActivityName=".prayertime.PrayerTimeActivity"/>
+
+
 
     </application>
 

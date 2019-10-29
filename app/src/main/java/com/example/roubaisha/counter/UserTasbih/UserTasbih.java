@@ -111,7 +111,7 @@ public class UserTasbih extends Activity {
             String[][] data = ls.executeReader("select *from person");
             ls.closeDB();
 
-            Toast.makeText(ctx, "Records: " + data.length, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(ctx, "Records: " + data.length, Toast.LENGTH_SHORT).show();
 
             pArrayList = new ArrayList<Person>();
             Person person;
