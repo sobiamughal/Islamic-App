@@ -224,92 +224,12 @@
         <activity android:name=".duaen.ListItemActivity41"
             android:parentActivityName=".duaen.MusnoonActivity"/>
 
-        <activity android:name=".activity.ScrollableTabsActivity"></activity>
-        <activity
-            android:name=".activity.Fajarfard"
-            android:label="Fajr: 2 Rakaat Fard"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Fajrsunnah"
-            android:label="Fajr: 2 Rakaat Sunnah"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Zuharsunnah"
-            android:label="Duhr: 4 Rakaat Sunnah"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Zuharfard"
-            android:label="Duhr: 4 Rakaat Fard"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Zuhar_sunnah"
-            android:label="Duhr: 2 Rakaat Sunnah"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Zuharnafil"
-            android:label="Duhr: 2 Rakaat Nafil"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Maghribfard"
-            android:label="Maghrib: 3 Rakaat Fard"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Maghribsunnah"
-            android:label="Maghrib: 2 Rakaat Sunnah"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Maghribnafil"
-            android:label="Maghrib: 2 Rakaat Nafil"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Asrfard"
-            android:label="Asr: 4 Rakaat Fard"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Asrsunnah"
-            android:label="Asr: 4 Rakaat Sunnah"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Ishasunnah"
-            android:label="Isha: 4 Rakaat Sunnah"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Ishafard"
-            android:label="Isha: 4 Rakaat Sunnah"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Isha_sunnah"
-            android:label="Isha: 2 Rakaat Sunnah"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Ishanafil"
-            android:label="Isha: 2 Rakaat Nafil"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Ishawitr"
-            android:label="Isha: 3 Rakaat Witr"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
-        <activity
-            android:name=".activity.Isha_nafil"
-            android:label="Isha: 2 Rakaat Nafil"
-            android:parentActivityName=".activity.ScrollableTabsActivity" >
-        </activity>
+        <activity android:name=".PrayerTimeYearActivity"
+            android:label="Prayer Timings Yearly"
+            android:parentActivityName=".prayertime.PrayerTimeActivity"/>
+
+
+
     </application>
 
 </manifest>
